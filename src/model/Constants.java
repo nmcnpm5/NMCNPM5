@@ -1,5 +1,5 @@
 package model;
-
+// Dùng để khai báo id, secret và redirect uri của ứng dụng login Facebook
 public class Constants {
 	public static String FACEBOOK_APP_ID = "2333204793575897";
 	public static String FACEBOOK_APP_SECRET = "1a2b33267cd41203164479f4fc08511c";
