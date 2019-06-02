@@ -51,7 +51,10 @@
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
 				<form action="LoginController"
 					class="login100-form validate-form flex-sb flex-w">
-					<span class="login100-form-title p-b-53"> Đăng nhập</span> <a
+					<span class="login100-form-title p-b-53"> Đăng nhập</span> 
+					<!--1. Chọn button Facebook -->
+					//<!--   Gọi hộp thoại Đăng nhập và cài đặt URL chuyển hướng. -->
+					<a
 						href="https://www.facebook.com/dialog/oauth?client_id=2333204793575897&redirect_uri=https://localhost:8443/MNCNPM/login-facebook"
 						 class="btn-face m-b-20"> <i
 						class="fab fa-facebook-square"></i> Facebook
