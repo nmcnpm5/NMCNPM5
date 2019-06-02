@@ -32,6 +32,8 @@ public class LoginFacebookController extends HttpServlet {
 			
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		//khi đăng nhập thành công sẽ trả về cái code 
+		//get code
 		String code = request.getParameter("code");
 		
 		if (code == null || code.isEmpty()) {
