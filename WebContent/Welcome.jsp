@@ -15,6 +15,16 @@
 </style>
 </head>
 <body>
-	<div class="a" >Đăng nhập thành công, xin chào</div>
+
+
+	Xin chào:
+	<%
+	String id = request.getAttribute("id").toString();
+	String name = request.getAttribute("name").toString();
+	out.print("Id: " + id);
+	out.print("<br/>Name: " + name);
+%>
+
+
 </body>
 </html>
