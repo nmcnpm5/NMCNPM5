@@ -16,15 +16,19 @@
 </head>
 <body>
 
-
-	Xin chào:
 	<%
-	String id = request.getAttribute("id").toString();
-	String name = request.getAttribute("name").toString();
-	out.print("Id: " + id);
-	out.print("<br/>Name: " + name);
-%>
-
+		Users users = (Users) session.getAttribute("user");
+		if (users != null) {
+	%>
+	<div class="a">
+		Đăng nhập thành công, xin chào
+		<div class="s" style="color: blue;"><%=users.getUsername()%></div>
+	</div>
+	<a href="LogoutController" style="color: red;"><i
+		class="fas fa-sign-out-alt"></i> Đăng Xuất</a>
+	<%
+		}
+	%>
 
 </body>
 </html>
